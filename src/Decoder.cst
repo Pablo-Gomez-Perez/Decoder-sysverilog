@@ -1,0 +1,49 @@
+//Copyright (C)2014-2023 Gowin Semiconductor Corporation.
+//All rights reserved. 
+//File Title: Physical Constraints file
+//Tool Version: V1.9.9 (64-bit)
+//Part Number: GW1NR-LV9QN88PC6/I5
+//Device: GW1NR-9
+//Device Version: C
+//Created Time: Sun 09 01 15:04:06 2024
+
+IO_LOC "semaforos[11]" 40;
+IO_PORT "semaforos[11]" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "semaforos[10]" 35;
+IO_PORT "semaforos[10]" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "semaforos[9]" 41;
+IO_PORT "semaforos[9]" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "semaforos[8]" 42;
+IO_PORT "semaforos[8]" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "semaforos[7]" 51;
+IO_PORT "semaforos[7]" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "semaforos[6]" 53;
+IO_PORT "semaforos[6]" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "semaforos[5]" 54;
+IO_PORT "semaforos[5]" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "semaforos[4]" 55;
+IO_PORT "semaforos[4]" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "semaforos[3]" 56;
+IO_PORT "semaforos[3]" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "semaforos[2]" 57;
+IO_PORT "semaforos[2]" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "semaforos[1]" 68;
+IO_PORT "semaforos[1]" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "semaforos[0]" 69;
+IO_PORT "semaforos[0]" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "ciclo_esp32[4]" 74;
+IO_PORT "ciclo_esp32[4]" PULL_MODE=UP BANK_VCCIO=1.8;
+IO_LOC "ciclo_esp32[3]" 73;
+IO_PORT "ciclo_esp32[3]" PULL_MODE=UP BANK_VCCIO=1.8;
+IO_LOC "ciclo_esp32[2]" 72;
+IO_PORT "ciclo_esp32[2]" PULL_MODE=UP BANK_VCCIO=1.8;
+IO_LOC "ciclo_esp32[1]" 71;
+IO_PORT "ciclo_esp32[1]" PULL_MODE=UP BANK_VCCIO=1.8;
+IO_LOC "ciclo_esp32[0]" 70;
+IO_PORT "ciclo_esp32[0]" PULL_MODE=UP BANK_VCCIO=1.8;
+IO_LOC "dest_esp32" 75;
+IO_PORT "dest_esp32" PULL_MODE=UP BANK_VCCIO=1.8;
+IO_LOC "rst" 4;
+IO_PORT "rst" PULL_MODE=UP BANK_VCCIO=1.8;
+IO_LOC "clk" 52;
+IO_PORT "clk" PULL_MODE=UP BANK_VCCIO=1.8;

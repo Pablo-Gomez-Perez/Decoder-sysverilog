@@ -1,0 +1,33 @@
+<?xml version="1" encoding="UTF-8"?>
+<GAO_CONFIG>
+    <Version>3.0</Version>
+    <Mode>Lite</Mode>
+    <AoCore_Lite index="0" sample_clock="clk" trig_type="0" capture_amount="4096" implemention="0" input_register_enabled="0" capture_init_data_enabled="0" module_name="top">
+        <SignalList>
+            <Bus capture_enable="true" name="ciclo_esp32[4:0]">
+                <Signal>ciclo_esp32[4]</Signal>
+                <Signal>ciclo_esp32[3]</Signal>
+                <Signal>ciclo_esp32[2]</Signal>
+                <Signal>ciclo_esp32[1]</Signal>
+                <Signal>ciclo_esp32[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="semaforos[11:0]">
+                <Signal>semaforos[11]</Signal>
+                <Signal>semaforos[10]</Signal>
+                <Signal>semaforos[9]</Signal>
+                <Signal>semaforos[8]</Signal>
+                <Signal>semaforos[7]</Signal>
+                <Signal>semaforos[6]</Signal>
+                <Signal>semaforos[5]</Signal>
+                <Signal>semaforos[4]</Signal>
+                <Signal>semaforos[3]</Signal>
+                <Signal>semaforos[2]</Signal>
+                <Signal>semaforos[1]</Signal>
+                <Signal>semaforos[0]</Signal>
+            </Bus>
+            <Signal capture_enable="true">rst</Signal>
+            <Signal capture_enable="true">dest_esp32</Signal>
+        </SignalList>
+    </AoCore_Lite>
+    <GAO_ID>0100110100111101</GAO_ID>
+</GAO_CONFIG>
