@@ -12,6 +12,10 @@ module top(input logic clk, rst, dest_esp32,input logic [4:0]ciclo_esp32,output 
 
 endmodule
 
+module UartGateSelect(input logic Tx2, Tx3, Tx4, output tri);
+
+endmodule
+
 
 module gene_1hz(input logic clk,rst,output logic pulso);
 
@@ -31,9 +35,6 @@ module gene_1hz(input logic clk,rst,output logic pulso);
     end;
 
 endmodule
-
-
-
 
 module decoder(input logic [4:0]ciclo_esp32,input logic destello, output logic [11:0]semaforos);
 
