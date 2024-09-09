@@ -2,6 +2,7 @@ GowinSynthesis start
 Running parser ...
 Analyzing Verilog file 'C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv'
 WARN  (EX3628) : Redeclaration of ANSI port 'pulso' is not allowed("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":32)
+WARN  (EX3792) : Literal value 'b10000 truncated to fit in 4 bits("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":87)
 Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_mem_ctrl.v'
 Analyzing included file 'C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_top_define.v'("C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_mem_ctrl.v":133)
 Back to file 'C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_mem_ctrl.v'("C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_mem_ctrl.v":133)
@@ -23,13 +24,13 @@ Compiling module 'top'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing proje
 Compiling module 'gene_1hz'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":29)
 WARN  (EX3791) : Expression size 26 truncated to fit in target size 25("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":42)
 Compiling module 'decoder'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":52)
-Compiling module 'uart_selector'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":138)
-Compiling module 'mux_triState'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":121)
-WARN  (EX3771) : Module instantiation should have an instance name("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":123)
-Compiling module 'triState'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":112)
-WARN  (EX3771) : Module instantiation should have an instance name("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":124)
-Compiling module 'demux'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":131)
-Port is declared here("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":138)
+Compiling module 'uart_selector'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":128)
+Compiling module 'mux_triState'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":111)
+WARN  (EX3771) : Module instantiation should have an instance name("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":113)
+Compiling module 'triState'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":102)
+WARN  (EX3771) : Module instantiation should have an instance name("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":114)
+Compiling module 'demux'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":121)
+Port is declared here("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":128)
 Compiling module 'gw_gao'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\impl\gwsynthesis\RTL_GAO\gw_gao_top.v":1)
 Compiling module 'GW_JTAG'("C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\gw_jtag.v":1)
 Compiling module '**'("C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_CON\gw_con_top.v":0)
@@ -39,7 +40,7 @@ Compiling module '**'("C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_AO
 Extracting RAM for identifier '**'("C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_mem_ctrl.v":0)
 Trying to combine GAO to RTL design
 NOTE  (EX0101) : Current top module is "top"
-WARN  (EX0211) : The output port "rx3" of module "uart_selector" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":138)
+WARN  (EX0211) : The output port "rx3" of module "uart_selector" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":128)
 [5%] Running netlist conversion ...
 Running device independent optimization ...
 [10%] Optimizing Phase 0 completed
@@ -56,7 +57,7 @@ Running technical mapping ...
 [75%] Tech-Mapping Phase 2 completed
 [80%] Tech-Mapping Phase 3 completed
 [90%] Tech-Mapping Phase 4 completed
-WARN  (NL0002) : The module "triState" instantiated to "i4" is swept in optimizing("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":123)
+WARN  (NL0002) : The module "triState" instantiated to "i4" is swept in optimizing("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":113)
 [95%] Generate netlist file "C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\impl\gwsynthesis\Decoder.vg" completed
 [100%] Generate report file "C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\impl\gwsynthesis\Decoder_syn.rpt.html" completed
 GowinSynthesis finish

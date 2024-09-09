@@ -28,41 +28,41 @@
     "InstLine" : 24,
     "InstName" : "_us",
     "ModuleFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
-    "ModuleLine" : 138,
+    "ModuleLine" : 128,
     "ModuleName" : "uart_selector",
     "SubInsts" : [
      {
       "InstFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
-      "InstLine" : 140,
+      "InstLine" : 130,
       "InstName" : "mux",
       "ModuleFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
-      "ModuleLine" : 121,
+      "ModuleLine" : 111,
       "ModuleName" : "mux_triState",
       "SubInsts" : [
        {
         "InstFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
-        "InstLine" : 123,
+        "InstLine" : 113,
         "InstName" : "i4",
         "ModuleFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
-        "ModuleLine" : 112,
+        "ModuleLine" : 102,
         "ModuleName" : "triState"
        },
        {
         "InstFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
-        "InstLine" : 124,
+        "InstLine" : 114,
         "InstName" : "i5",
         "ModuleFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
-        "ModuleLine" : 112,
+        "ModuleLine" : 102,
         "ModuleName" : "triState"
        }
       ]
      },
      {
       "InstFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
-      "InstLine" : 141,
+      "InstLine" : 131,
       "InstName" : "dmx",
       "ModuleFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
-      "ModuleLine" : 131,
+      "ModuleLine" : 121,
       "ModuleName" : "demux"
      }
     ]

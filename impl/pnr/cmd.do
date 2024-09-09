@@ -3,7 +3,7 @@
 -pn GW1NR-LV9QN88PC6/I5
 -cst C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.cst
 -cfg C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\impl\pnr\device.cfg
--gao_crc 0100110100111101
+-gao_crc 1100110000000000
 -bit
 -tr
 -ph

@@ -1,9 +1,4 @@
 module gw_gao(
-    \ciclo_esp32[4] ,
-    \ciclo_esp32[3] ,
-    \ciclo_esp32[2] ,
-    \ciclo_esp32[1] ,
-    \ciclo_esp32[0] ,
     \semaforos[11] ,
     \semaforos[10] ,
     \semaforos[9] ,
@@ -16,8 +11,6 @@ module gw_gao(
     \semaforos[2] ,
     \semaforos[1] ,
     \semaforos[0] ,
-    rst,
-    dest_esp32,
     clk,
     tms_pad_i,
     tck_pad_i,
@@ -25,11 +18,6 @@ module gw_gao(
     tdo_pad_o
 );
 
-input \ciclo_esp32[4] ;
-input \ciclo_esp32[3] ;
-input \ciclo_esp32[2] ;
-input \ciclo_esp32[1] ;
-input \ciclo_esp32[0] ;
 input \semaforos[11] ;
 input \semaforos[10] ;
 input \semaforos[9] ;
@@ -42,19 +30,12 @@ input \semaforos[3] ;
 input \semaforos[2] ;
 input \semaforos[1] ;
 input \semaforos[0] ;
-input rst;
-input dest_esp32;
 input clk;
 input tms_pad_i;
 input tck_pad_i;
 input tdi_pad_i;
 output tdo_pad_o;
 
-wire \ciclo_esp32[4] ;
-wire \ciclo_esp32[3] ;
-wire \ciclo_esp32[2] ;
-wire \ciclo_esp32[1] ;
-wire \ciclo_esp32[0] ;
 wire \semaforos[11] ;
 wire \semaforos[10] ;
 wire \semaforos[9] ;
@@ -67,8 +48,6 @@ wire \semaforos[3] ;
 wire \semaforos[2] ;
 wire \semaforos[1] ;
 wire \semaforos[0] ;
-wire rst;
-wire dest_esp32;
 wire clk;
 wire tms_pad_i;
 wire tck_pad_i;
@@ -143,7 +122,7 @@ gw_con_top  u_icon_top(
 
 ao_top u_ao_top(
     .control(control0[9:0]),
-    .data_i({\ciclo_esp32[4] ,\ciclo_esp32[3] ,\ciclo_esp32[2] ,\ciclo_esp32[1] ,\ciclo_esp32[0] ,\semaforos[11] ,\semaforos[10] ,\semaforos[9] ,\semaforos[8] ,\semaforos[7] ,\semaforos[6] ,\semaforos[5] ,\semaforos[4] ,\semaforos[3] ,\semaforos[2] ,\semaforos[1] ,\semaforos[0] ,rst,dest_esp32}),
+    .data_i({\semaforos[11] ,\semaforos[10] ,\semaforos[9] ,\semaforos[8] ,\semaforos[7] ,\semaforos[6] ,\semaforos[5] ,\semaforos[4] ,\semaforos[3] ,\semaforos[2] ,\semaforos[1] ,\semaforos[0] }),
     .clk_i(clk)
 );
 
