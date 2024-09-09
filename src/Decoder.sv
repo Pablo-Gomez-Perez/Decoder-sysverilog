@@ -2,7 +2,18 @@
 /**
  * Defining the top module
  */
-module top(input logic clk, rst, dest_esp32,input logic [4:0]ciclo_esp32,output logic[11:0]semaforos);
+module top(input logic clk,
+            rst, //reset
+            select, //selector de transito de información de puerto uart activo
+            dest_esp32, //bit de destello
+            tx2, //puerto Uart Transmiter de la ESP32 
+            tx4, //puerto Uart Transmiter del modulo de radiofrecuencia
+            tx3, //puerto Uart transmiter del modulo sim7670
+            input logic [4:0]ciclo_esp32, //entrada de las combinaciones enviadas por la esp32
+            output logic rx2, //Puerto uart receiber de la esp32
+            rx4, //Puerto Uart receiber del modulo de radiofrecuencia
+            rx3, //Puerto Uart receiber del modulo sim
+            output logic[11:0]semaforos); //salida a los semáforos
 
     logic pulso;
     logic destello;
@@ -10,9 +21,7 @@ module top(input logic clk, rst, dest_esp32,input logic [4:0]ciclo_esp32,output 
     gene_1hz g1(clk,rst,pulso);
     decoder d1(ciclo_esp32,destello,semaforos);
 
-endmodule
-
-module UartGateSelect(input logic Tx2, Tx3, Tx4, output tri);
+    uart_selector _us(select, tx2, tx3, tx4, rx2, rx3, rx4);
 
 endmodule
 
@@ -36,6 +45,10 @@ module gene_1hz(input logic clk,rst,output logic pulso);
 
 endmodule
 
+
+/**
+ * Decodificador
+ */
 module decoder(input logic [4:0]ciclo_esp32,input logic destello, output logic [11:0]semaforos);
 
     always_comb begin
@@ -92,3 +105,40 @@ module decoder(input logic [4:0]ciclo_esp32,input logic destello, output logic [
     end
 
 endmodule
+
+/**
+ * Buffer o modulo de tercer estado
+ */
+module triState(input logic a, select, output tri y);
+
+    assign y = select ? a : 1'bz;
+
+endmodule
+
+/**
+ * Multiplexor de tercer estado
+ */
+module mux_triState(input logic tx4, tx3, select, output tri rx2);
+
+    triState(tx4,select,rx2);
+    triState(tx3,~select,rx2);
+
+endmodule
+
+/**
+ * Demultiplexor
+ */
+module demux(input logic tx2, select, output logic rx4, rx3);
+
+    assign rx4 = select ? tx2 : 1;
+    assign rx3 = ~select ? tx2 : 1;
+
+endmodule
+
+module uart_selector(input logic select, tx2, tx3, tx4, output logic rx2, rx3, rx4);
+    
+    mux_triState mux(tx4,tx3,select,rx2);
+    demux dmx(tx2,select,rx4,tx4);
+
+endmodule
+
