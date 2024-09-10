@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module name="top">
     <SubModule name="gw_gao_inst_0" Register="147" Lut="159" Bsram="1"/>
-    <SubModule name="g1" Register="26" Alu="24" Lut="11"/>
-    <SubModule name="d1" Lut="21"/>
+    <SubModule name="g1" Register="26" Alu="24" Lut="12"/>
+    <SubModule name="d1" Lut="17"/>
     <SubModule name="_us">
         <SubModule name="mux">
             <SubModule name="i5" Lut="1"/>
         </SubModule>
-        <SubModule name="dmx" Lut="1"/>
+        <SubModule name="dmx" Lut="2"/>
     </SubModule>
 </Module>

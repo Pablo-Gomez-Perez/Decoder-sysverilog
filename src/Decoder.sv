@@ -6,22 +6,25 @@ module top(input logic clk,
             rst, //reset
             select, //selector de transito de información de puerto uart activo
             dest_esp32, //bit de destello
-            tx2, //puerto Uart Transmiter de la ESP32 
+            tx2, //puerto Uart Transmiter de la ESP32 - 18
             tx4, //puerto Uart Transmiter del modulo de radiofrecuencia
-            tx3, //puerto Uart transmiter del modulo sim7670
+            tx3, //puerto Uart transmiter del modulo sim7670            
             input logic [3:0]ciclo_esp32, //entrada de las combinaciones enviadas por la esp32
-            output logic rx2, //Puerto uart receiber de la esp32
+            output logic rx2,led, //Puerto uart receiber de la esp32
             rx4, //Puerto Uart receiber del modulo de radiofrecuencia
-            rx3, //Puerto Uart receiber del modulo sim
+            rx3, //Puerto Uart receiber del modulo sim            
             output logic[11:0]semaforos); //salida a los semáforos
-    
+    assign led=select;
+
     logic pulso;
     logic destello;
     assign destello=dest_esp32&pulso;
     gene_1hz g1(clk,rst,pulso);
-    decoder d1(ciclo_esp32,destello,semaforos);
+    decoder d1(ciclo_esp32,destello,semaforos);    
 
     uart_selector _us(select, tx2, tx3, tx4, rx2, rx3, rx4);
+
+    
 
 endmodule
 
@@ -55,7 +58,7 @@ module decoder(input logic [3:0]ciclo_esp32,input logic destello, output logic [
         case({ciclo_esp32,destello})
 
              //destello ambar 
-            4'b00000:semaforos=12'b010_010_010_010; 
+            4'b00000:semaforos=12'b010_010_010_010;
             4'b00001:semaforos=12'b000_000_000_000;
 
 
@@ -128,7 +131,7 @@ endmodule
 module uart_selector(input logic select, tx2, tx3, tx4, output logic rx2, rx3, rx4);
     
     mux_triState mux(tx4,tx3,select,rx2);
-    demux dmx(tx2,select,rx4,tx4);
+    demux dmx(tx2,select,rx4,rx3);
 
 endmodule
 
