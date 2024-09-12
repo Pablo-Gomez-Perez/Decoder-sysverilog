@@ -5,7 +5,7 @@
 //Part Number: GW1NR-LV9QN88PC6/I5
 //Device: GW1NR-9
 //Device Version: C
-//Created Time: Wed 09 11 21:00:35 2024
+//Created Time: Thu 09 12 08:05:35 2024
 
 IO_LOC "semaforos[11]" 32;
 IO_PORT "semaforos[11]" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
@@ -31,8 +31,8 @@ IO_LOC "semaforos[1]" 76;
 IO_PORT "semaforos[1]" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
 IO_LOC "semaforos[0]" 77;
 IO_PORT "semaforos[0]" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
-IO_LOC "rx_espia" 17;
-IO_PORT "rx_espia" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "tx_pc_17" 17;
+IO_PORT "tx_pc_17" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
 IO_LOC "rx3" 69;
 IO_PORT "rx3" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
 IO_LOC "rx4" 55;
@@ -49,6 +49,8 @@ IO_LOC "ciclo_esp32[1]" 37;
 IO_PORT "ciclo_esp32[1]" PULL_MODE=UP BANK_VCCIO=1.8;
 IO_LOC "ciclo_esp32[0]" 38;
 IO_PORT "ciclo_esp32[0]" PULL_MODE=UP BANK_VCCIO=1.8;
+IO_LOC "rx_pc_18" 18;
+IO_PORT "rx_pc_18" PULL_MODE=UP BANK_VCCIO=1.8;
 IO_LOC "tx3" 68;
 IO_PORT "tx3" PULL_MODE=UP BANK_VCCIO=1.8;
 IO_LOC "tx4" 54;
@@ -63,5 +65,3 @@ IO_LOC "rst" 4;
 IO_PORT "rst" PULL_MODE=UP BANK_VCCIO=1.8;
 IO_LOC "clk" 52;
 IO_PORT "clk" PULL_MODE=UP BANK_VCCIO=1.8;
-IO_LOC "tx_desde_usr" 18;
-IO_PORT "tx_desde_usr" PULL_MODE=UP BANK_VCCIO=1.8;
