@@ -8,11 +8,13 @@ module top(input logic clk,
             dest_esp32, //bit de destello
             tx2, //puerto Uart Transmiter de la ESP32 - 18
             tx4, //puerto Uart Transmiter del modulo de radiofrecuencia
-            tx3, //puerto Uart transmiter del modulo sim7670            
+            tx3, //puerto Uart transmiter del modulo sim7670
+            tx_desde_usr, //Lo que la computadora nos transmite
             input logic [3:0]ciclo_esp32, //entrada de las combinaciones enviadas por la esp32
             output logic rx2,led, //Puerto uart receiber de la esp32
             rx4, //Puerto Uart receiber del modulo de radiofrecuencia
-            rx3, //Puerto Uart receiber del modulo sim            
+            rx3, //Puerto Uart receiber del modulo sim
+            rx_espia, //Salida espía
             output logic[11:0]semaforos); //salida a los semáforos
     assign led=select;
 
@@ -20,11 +22,11 @@ module top(input logic clk,
     logic destello;
     assign destello=dest_esp32&pulso;
     gene_1hz g1(clk,rst,pulso);
-    decoder d1(ciclo_esp32,destello,semaforos);    
+    decoder d1(ciclo_esp32,destello,semaforos);
 
     uart_selector _us(select, tx2, tx3, tx4, rx2, rx3, rx4);
-
     
+    //assign rx_espia = rx3;
 
 endmodule
 
