@@ -22,6 +22,7 @@ module top(input logic clk,
     logic rx3_selected; //salida directa hacia el rx3 desde el modulo Uart Selector
     logic pulso;
     logic destello;
+    logic salida_espia;
     assign destello=dest_esp32&pulso;
     gene_1hz g1(clk,rst,pulso);
     decoder d1(ciclo_esp32,destello,semaforos);
@@ -29,7 +30,8 @@ module top(input logic clk,
     uart_selector _us(select, tx2, tx3, tx4, rx2, rx3_selected, rx4);
     
     assign rx3 = rx3_selected & rx_pc_18;
-    assign tx_pc_17 = tx3 & tx4;
+    assign salida_espia = rx3;
+    assign tx_pc_17 = tx3 & tx4 & rx3;
 
 endmodule
 

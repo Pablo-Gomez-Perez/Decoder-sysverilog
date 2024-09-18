@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module name="top" Lut="2">
-    <SubModule name="gw_gao_inst_0" Register="145" Lut="185" Bsram="16"/>
+    <SubModule name="gw_gao_inst_0" Register="145" Lut="180" Bsram="16"/>
     <SubModule name="g1" Register="26" Alu="24" Lut="12"/>
-    <SubModule name="d1" Lut="17"/>
+    <SubModule name="d1" Lut="19"/>
     <SubModule name="_us">
         <SubModule name="mux">
             <SubModule name="i4" Lut="1"/>
