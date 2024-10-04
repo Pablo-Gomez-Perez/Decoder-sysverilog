@@ -8,11 +8,14 @@ module top(input logic clk,
             dest_esp32, //bit de destello
             tx2, //puerto Uart Transmiter de la ESP32 - 18
             tx4, //puerto Uart Transmiter del modulo de radiofrecuencia
-            tx3, //puerto Uart transmiter del modulo sim7670            
+            rx3, //puerto Uart transmiter del modulo sim7670            
             input logic [3:0]ciclo_esp32, //entrada de las combinaciones enviadas por la esp32
-            output logic rx2,led, //Puerto uart receiber de la esp32
+            output logic 
+            rx2, //Puerto uart receiber de la esp32
+            led, //Led que indica el select
             rx4, //Puerto Uart receiber del modulo de radiofrecuencia
-            rx3, //Puerto Uart receiber del modulo sim            
+            tx3, //Puerto Uart receiber del modulo sim
+            rx_espia, // Pin para verificación de respuesta
             output logic[11:0]semaforos); //salida a los semáforos
     assign led=select;
 
@@ -22,8 +25,9 @@ module top(input logic clk,
     gene_1hz g1(clk,rst,pulso);
     decoder d1(ciclo_esp32,destello,semaforos);    
 
-    uart_selector _us(select, tx2, tx3, tx4, rx2, rx3, rx4);
-
+    uart_selector _us(select, tx2, rx3, tx4, rx2, tx3, rx4);
+    
+    assign rx_espia = rx3 & tx3;
     
 
 endmodule
@@ -38,7 +42,7 @@ module gene_1hz(input logic clk,rst,output logic pulso);
             conta<=0;
         end
         else if(conta==25'd13_500_000)begin 
-            conta<=0; 
+            conta<=0;
             pulso<=~pulso;
         end
         else begin
@@ -58,37 +62,34 @@ module decoder(input logic [3:0]ciclo_esp32,input logic destello, output logic [
         case({ciclo_esp32,destello})
 
              //destello ambar 
-            4'b00000:semaforos=12'b010_010_010_010;
-            4'b00001:semaforos=12'b000_000_000_000;
+            5'b00000:semaforos=12'b010_010_010_010; 
+            //5'b00001:semaforos=12'b000_000_000_000;
 
 
             //1 verde
-            4'b00010:semaforos=12'b100_100_100_001; 
-            4'b00011:semaforos=12'b100_100_100_000; 
+            5'b00010:semaforos=12'b100_100_100_001; 
+            5'b00011:semaforos=12'b100_100_100_000; 
             //1 ambar
-            4'b00100:semaforos=12'b100_100_100_010; 
+            5'b00100:semaforos=12'b100_100_100_010; 
 
 
             //2 verde
-            4'b00110:semaforos=12'b100_100_001_100; 
-            4'b00111:semaforos=12'b100_100_000_100; 
+            5'b00110:semaforos=12'b100_100_001_100;
+            5'b00111:semaforos=12'b100_100_000_100; 
             //2 ambar
-            4'b01000:semaforos=12'b100_100_010_100; 
+            5'b01000:semaforos=12'b100_100_010_100; 
 
             //3 verde
-            4'b01010:semaforos=12'b100_001_100_100; 
-            4'b01011:semaforos=12'b100_000_100_100; 
-
+            5'b01010:semaforos=12'b100_001_100_100; 
+            5'b01011:semaforos=12'b100_000_100_100; 
             //3 ambar
-            4'b01100:semaforos=12'b100_010_100_100; 
+            5'b01100:semaforos=12'b100_010_100_100; 
 
             //4 verde
-            4'b01110:semaforos=12'b001_100_100_100; 
-            4'b01111:semaforos=12'b000_100_100_100; 
-
+            5'b01110:semaforos=12'b001_100_100_100; 
+            5'b01111:semaforos=12'b000_100_100_100; 
             //4 ambar
-            4'b10000:semaforos=12'b010_100_100_100;
-
+            5'b10000:semaforos=12'b010_100_100_100;
             //errores
             //5'b10010:semaforos=12'b010_010_010_010; //
             //5'b10011:semaforos=12'b100_100_100_100; //
@@ -128,10 +129,10 @@ module demux(input logic tx2, select, output logic rx4, rx3);
 
 endmodule
 
-module uart_selector(input logic select, tx2, tx3, tx4, output logic rx2, rx3, rx4);
+module uart_selector(input logic select, tx2, rx3, tx4, output logic rx2, tx3, rx4);
     
-    mux_triState mux(tx4,tx3,select,rx2);
-    demux dmx(tx2,select,rx4,rx3);
+    mux_triState mux(tx4,rx3,select,rx2);
+    demux dmx(tx2,select,rx4,tx3);
 
 endmodule
 

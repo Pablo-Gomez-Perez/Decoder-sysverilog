@@ -1,7 +1,7 @@
-Reading netlist file: "C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\impl\gwsynthesis\Decoder.vg"
-Parsing netlist file "C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\impl\gwsynthesis\Decoder.vg" completed
+Reading netlist file: "C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\Decoder-sysverilog\impl\gwsynthesis\Decoder.vg"
+Parsing netlist file "C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\Decoder-sysverilog\impl\gwsynthesis\Decoder.vg" completed
 Processing netlist completed
-Reading constraint file: "C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.cst"
+Reading constraint file: "C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\Decoder-sysverilog\src\Decoder.cst"
 Physical Constraint parsed completed
 Running placement......
 [10%] Placement Phase 0 completed
@@ -20,10 +20,10 @@ Bitstream generation in progress......
 Bitstream generation completed
 Running power analysis......
 [100%] Power analysis completed
-Generate file "C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\impl\pnr\Decoder.power.html" completed
-Generate file "C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\impl\pnr\Decoder.pin.html" completed
-Generate file "C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\impl\pnr\Decoder.rpt.html" completed
-Generate file "C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\impl\pnr\Decoder.rpt.txt" completed
-Generate file "C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\impl\pnr\Decoder.tr.html" completed
-Mon Sep  9 19:15:12 2024
+Generate file "C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\Decoder-sysverilog\impl\pnr\Decoder.power.html" completed
+Generate file "C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\Decoder-sysverilog\impl\pnr\Decoder.pin.html" completed
+Generate file "C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\Decoder-sysverilog\impl\pnr\Decoder.rpt.html" completed
+Generate file "C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\Decoder-sysverilog\impl\pnr\Decoder.rpt.txt" completed
+Generate file "C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\Decoder-sysverilog\impl\pnr\Decoder.tr.html" completed
+Wed Sep 11 19:14:14 2024
 

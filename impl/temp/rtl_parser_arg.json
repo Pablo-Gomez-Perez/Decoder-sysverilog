@@ -2,7 +2,7 @@
  "Device" : "GW1NR-9C",
  "Files" : [
   {
-   "Path" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
+   "Path" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/Decoder-sysverilog/src/Decoder.sv",
    "Type" : "verilog"
   }
  ],
@@ -10,7 +10,7 @@
 
  ],
  "LoopLimit" : 2000,
- "ResultFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/impl/temp/rtl_parser.result",
+ "ResultFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/Decoder-sysverilog/impl/temp/rtl_parser.result",
  "Top" : "top",
  "VerilogStd" : "sysv",
  "VhdlStd" : "vhdl_93"
