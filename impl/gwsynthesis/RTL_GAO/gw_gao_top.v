@@ -7,6 +7,22 @@ module gw_gao(
     led,
     rx4,
     rx3,
+    \semaforos[11] ,
+    \semaforos[10] ,
+    \semaforos[9] ,
+    \semaforos[8] ,
+    \semaforos[7] ,
+    \semaforos[6] ,
+    \semaforos[5] ,
+    \semaforos[4] ,
+    \semaforos[3] ,
+    \semaforos[2] ,
+    \semaforos[1] ,
+    \semaforos[0] ,
+    \combinacion_final[3] ,
+    \combinacion_final[2] ,
+    \combinacion_final[1] ,
+    \combinacion_final[0] ,
     clk,
     tms_pad_i,
     tck_pad_i,
@@ -22,6 +38,22 @@ input rx2;
 input led;
 input rx4;
 input rx3;
+input \semaforos[11] ;
+input \semaforos[10] ;
+input \semaforos[9] ;
+input \semaforos[8] ;
+input \semaforos[7] ;
+input \semaforos[6] ;
+input \semaforos[5] ;
+input \semaforos[4] ;
+input \semaforos[3] ;
+input \semaforos[2] ;
+input \semaforos[1] ;
+input \semaforos[0] ;
+input \combinacion_final[3] ;
+input \combinacion_final[2] ;
+input \combinacion_final[1] ;
+input \combinacion_final[0] ;
 input clk;
 input tms_pad_i;
 input tck_pad_i;
@@ -36,6 +68,22 @@ wire rx2;
 wire led;
 wire rx4;
 wire rx3;
+wire \semaforos[11] ;
+wire \semaforos[10] ;
+wire \semaforos[9] ;
+wire \semaforos[8] ;
+wire \semaforos[7] ;
+wire \semaforos[6] ;
+wire \semaforos[5] ;
+wire \semaforos[4] ;
+wire \semaforos[3] ;
+wire \semaforos[2] ;
+wire \semaforos[1] ;
+wire \semaforos[0] ;
+wire \combinacion_final[3] ;
+wire \combinacion_final[2] ;
+wire \combinacion_final[1] ;
+wire \combinacion_final[0] ;
 wire clk;
 wire tms_pad_i;
 wire tck_pad_i;
@@ -110,7 +158,7 @@ gw_con_top  u_icon_top(
 
 ao_top u_ao_top(
     .control(control0[9:0]),
-    .data_i({select,tx2,tx4,tx3,rx2,led,rx4,rx3}),
+    .data_i({select,tx2,tx4,tx3,rx2,led,rx4,rx3,\semaforos[11] ,\semaforos[10] ,\semaforos[9] ,\semaforos[8] ,\semaforos[7] ,\semaforos[6] ,\semaforos[5] ,\semaforos[4] ,\semaforos[3] ,\semaforos[2] ,\semaforos[1] ,\semaforos[0] ,\combinacion_final[3] ,\combinacion_final[2] ,\combinacion_final[1] ,\combinacion_final[0] }),
     .clk_i(clk)
 );
 

@@ -2,7 +2,7 @@
 <GAO_CONFIG>
     <Version>3.0</Version>
     <Mode>Lite</Mode>
-    <AoCore_Lite index="0" sample_clock="clk" trig_type="0" capture_amount="32768" implemention="0" input_register_enabled="0" capture_init_data_enabled="0" module_name="top">
+    <AoCore_Lite index="0" sample_clock="clk" trig_type="0" capture_amount="4096" implemention="0" input_register_enabled="0" capture_init_data_enabled="0" module_name="top">
         <SignalList>
             <Signal capture_enable="true">select</Signal>
             <Signal capture_enable="true">tx2</Signal>
@@ -12,7 +12,27 @@
             <Signal capture_enable="true">led</Signal>
             <Signal capture_enable="true">rx4</Signal>
             <Signal capture_enable="true">rx3</Signal>
+            <Bus capture_enable="true" name="semaforos[11:0]">
+                <Signal>semaforos[11]</Signal>
+                <Signal>semaforos[10]</Signal>
+                <Signal>semaforos[9]</Signal>
+                <Signal>semaforos[8]</Signal>
+                <Signal>semaforos[7]</Signal>
+                <Signal>semaforos[6]</Signal>
+                <Signal>semaforos[5]</Signal>
+                <Signal>semaforos[4]</Signal>
+                <Signal>semaforos[3]</Signal>
+                <Signal>semaforos[2]</Signal>
+                <Signal>semaforos[1]</Signal>
+                <Signal>semaforos[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="combinacion_final[3:0]">
+                <Signal>combinacion_final[3]</Signal>
+                <Signal>combinacion_final[2]</Signal>
+                <Signal>combinacion_final[1]</Signal>
+                <Signal>combinacion_final[0]</Signal>
+            </Bus>
         </SignalList>
     </AoCore_Lite>
-    <GAO_ID>1011111001110101</GAO_ID>
+    <GAO_ID>0000101111010001</GAO_ID>
 </GAO_CONFIG>
