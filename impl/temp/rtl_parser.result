@@ -1,92 +1,92 @@
 [
  {
-  "InstFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
+  "InstFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/hdl-SEPEMEX/Decoder-sysverilog/src/Decoder.sv",
   "InstLine" : 5,
   "InstName" : "top",
-  "ModuleFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
+  "ModuleFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/hdl-SEPEMEX/Decoder-sysverilog/src/Decoder.sv",
   "ModuleLine" : 5,
   "ModuleName" : "top",
   "SubInsts" : [
    {
-    "InstFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
-    "InstLine" : 33,
+    "InstFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/hdl-SEPEMEX/Decoder-sysverilog/src/Decoder.sv",
+    "InstLine" : 40,
     "InstName" : "g1",
-    "ModuleFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
-    "ModuleLine" : 51,
+    "ModuleFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/hdl-SEPEMEX/Decoder-sysverilog/src/Decoder.sv",
+    "ModuleLine" : 58,
     "ModuleName" : "gene_1hz"
    },
    {
-    "InstFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
-    "InstLine" : 34,
+    "InstFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/hdl-SEPEMEX/Decoder-sysverilog/src/Decoder.sv",
+    "InstLine" : 41,
     "InstName" : "p1",
-    "ModuleFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
-    "ModuleLine" : 157,
+    "ModuleFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/hdl-SEPEMEX/Decoder-sysverilog/src/Decoder.sv",
+    "ModuleLine" : 164,
     "ModuleName" : "pulso_boton"
    },
    {
-    "InstFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
-    "InstLine" : 36,
+    "InstFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/hdl-SEPEMEX/Decoder-sysverilog/src/Decoder.sv",
+    "InstLine" : 43,
     "InstName" : "btn",
-    "ModuleFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
-    "ModuleLine" : 178,
+    "ModuleFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/hdl-SEPEMEX/Decoder-sysverilog/src/Decoder.sv",
+    "ModuleLine" : 185,
     "ModuleName" : "boton_sumador"
    },
    {
-    "InstFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
-    "InstLine" : 38,
+    "InstFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/hdl-SEPEMEX/Decoder-sysverilog/src/Decoder.sv",
+    "InstLine" : 45,
     "InstName" : "mux",
-    "ModuleFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
-    "ModuleLine" : 199,
+    "ModuleFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/hdl-SEPEMEX/Decoder-sysverilog/src/Decoder.sv",
+    "ModuleLine" : 206,
     "ModuleName" : "mux_accion_semaforo"
    },
    {
-    "InstFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
-    "InstLine" : 40,
+    "InstFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/hdl-SEPEMEX/Decoder-sysverilog/src/Decoder.sv",
+    "InstLine" : 47,
     "InstName" : "d1",
-    "ModuleFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
-    "ModuleLine" : 74,
+    "ModuleFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/hdl-SEPEMEX/Decoder-sysverilog/src/Decoder.sv",
+    "ModuleLine" : 81,
     "ModuleName" : "decoder"
    },
    {
-    "InstFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
-    "InstLine" : 42,
+    "InstFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/hdl-SEPEMEX/Decoder-sysverilog/src/Decoder.sv",
+    "InstLine" : 49,
     "InstName" : "_us",
-    "ModuleFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
-    "ModuleLine" : 150,
+    "ModuleFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/hdl-SEPEMEX/Decoder-sysverilog/src/Decoder.sv",
+    "ModuleLine" : 157,
     "ModuleName" : "uart_selector",
     "SubInsts" : [
      {
-      "InstFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
-      "InstLine" : 152,
+      "InstFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/hdl-SEPEMEX/Decoder-sysverilog/src/Decoder.sv",
+      "InstLine" : 159,
       "InstName" : "mux",
-      "ModuleFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
-      "ModuleLine" : 133,
+      "ModuleFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/hdl-SEPEMEX/Decoder-sysverilog/src/Decoder.sv",
+      "ModuleLine" : 140,
       "ModuleName" : "mux_triState",
       "SubInsts" : [
        {
-        "InstFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
-        "InstLine" : 135,
+        "InstFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/hdl-SEPEMEX/Decoder-sysverilog/src/Decoder.sv",
+        "InstLine" : 142,
         "InstName" : "i4",
-        "ModuleFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
-        "ModuleLine" : 124,
+        "ModuleFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/hdl-SEPEMEX/Decoder-sysverilog/src/Decoder.sv",
+        "ModuleLine" : 131,
         "ModuleName" : "triState"
        },
        {
-        "InstFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
-        "InstLine" : 136,
+        "InstFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/hdl-SEPEMEX/Decoder-sysverilog/src/Decoder.sv",
+        "InstLine" : 143,
         "InstName" : "i5",
-        "ModuleFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
-        "ModuleLine" : 124,
+        "ModuleFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/hdl-SEPEMEX/Decoder-sysverilog/src/Decoder.sv",
+        "ModuleLine" : 131,
         "ModuleName" : "triState"
        }
       ]
      },
      {
-      "InstFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
-      "InstLine" : 153,
+      "InstFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/hdl-SEPEMEX/Decoder-sysverilog/src/Decoder.sv",
+      "InstLine" : 160,
       "InstName" : "dmx",
-      "ModuleFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/DecoderSepemex/Decoder/src/Decoder.sv",
-      "ModuleLine" : 143,
+      "ModuleFile" : "C:/Users/PABLO-LAP-LENOVO/Documents/gti programing projects/hdl/hdl-SEPEMEX/Decoder-sysverilog/src/Decoder.sv",
+      "ModuleLine" : 150,
       "ModuleName" : "demux"
      }
     ]

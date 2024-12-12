@@ -1,9 +1,9 @@
--d C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\impl\gwsynthesis\Decoder.vg
+-d C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\hdl-SEPEMEX\Decoder-sysverilog\impl\gwsynthesis\Decoder.vg
 -p GW1NR-9C-QFN88P-6
 -pn GW1NR-LV9QN88PC6/I5
--cst C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.cst
--cfg C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\impl\pnr\device.cfg
--gao_crc 0000101111010001
+-cst C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\hdl-SEPEMEX\Decoder-sysverilog\src\Decoder.cst
+-cfg C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\hdl-SEPEMEX\Decoder-sysverilog\impl\pnr\device.cfg
+-gao_crc 0011111001101010
 -bit
 -tr
 -ph

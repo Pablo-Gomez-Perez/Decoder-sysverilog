@@ -13,29 +13,36 @@ module top(input logic clk,
             rx_pc_18, //Puerto donde recibe la fpga desde la computadora
             boton, //entrada del pulso del boton
             input logic [3:0]ciclo_esp32, //entrada de las combinaciones enviadas por la esp32
-            output logic rx2,led, //Puerto uart receiber de la esp32
+            output logic rx2, //Puerto uart receiber de la esp32
+            led, // Para identificar si está arriba el select para la uart
+            led_indicador_accion, //Indica en qué modo está trabajando el controlador
             rx4, //Puerto Uart receiber del modulo de radiofrecuencia
             rx3, //Puerto Uart receiber del modulo sim
             tx_pc_17, //Salida hacia la computadora
             output logic[11:0]semaforos); //salida a los semáforos
 
-    assign led=select;
+    assign led = select;
+    assign led_indicador_accion = accion_selector;
 
     logic rx3_selected; //salida directa hacia el rx3 desde el modulo Uart Selector
     logic pulso;
     logic pulso_btn;
     logic destello;
     logic salida_espia;
+    logic cable_filtro_destello;
     logic[3:0] combinacion_boton;
     logic[3:0] combinacion_final;
-    assign destello=dest_esp32&pulso;
+
+    assign cable_filtro_destello = dest_esp32 & accion_selector;
+    
+    assign destello=cable_filtro_destello&pulso;
 
     gene_1hz g1(clk,rst,pulso);
     pulso_boton p1(clk,rst,pulso_btn);
     
     boton_sumador btn(boton, pulso_btn, rst, combinacion_boton);
 
-    mux_accion_semaforo mux(ciclo_esp32, combinacion_boton, accion_selector, combinacion_final);
+    mux_accion_semaforo mux(ciclo_esp32, combinacion_boton, accion_selector, combinacion_final);        
 
     decoder d1(combinacion_final,destello,semaforos);
 

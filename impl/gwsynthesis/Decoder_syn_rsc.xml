@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module name="top" Lut="2">
-    <SubModule name="gw_gao_inst_0" Register="188" Lut="216" Bsram="6"/>
+    <SubModule name="gw_gao_inst_0" Register="208" Lut="213" Bsram="15"/>
     <SubModule name="g1" Register="26" Alu="24" Lut="12"/>
-    <SubModule name="p1" Register="26" Lut="49"/>
-    <SubModule name="btn" Register="4" Lut="8"/>
+    <SubModule name="p1" Register="26" Lut="47"/>
+    <SubModule name="btn" Register="4" Lut="10"/>
     <SubModule name="mux" Lut="4"/>
     <SubModule name="d1" Lut="19"/>
     <SubModule name="_us">

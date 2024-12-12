@@ -1,41 +1,41 @@
 GowinSynthesis start
 Running parser ...
-Analyzing Verilog file 'C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv'
-WARN  (EX3628) : Redeclaration of ANSI port 'pulso' is not allowed("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":54)
-WARN  (EX3792) : Literal value 'b10000 truncated to fit in 4 bits("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":109)
+Analyzing Verilog file 'C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\hdl-SEPEMEX\Decoder-sysverilog\src\Decoder.sv'
+WARN  (EX3628) : Redeclaration of ANSI port 'pulso' is not allowed("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\hdl-SEPEMEX\Decoder-sysverilog\src\Decoder.sv":61)
+WARN  (EX3792) : Literal value 'b10000 truncated to fit in 4 bits("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\hdl-SEPEMEX\Decoder-sysverilog\src\Decoder.sv":116)
 Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_mem_ctrl.v'
-Analyzing included file 'C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_top_define.v'("C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_mem_ctrl.v":133)
+Analyzing included file 'C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\hdl-SEPEMEX\Decoder-sysverilog\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_top_define.v'("C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_mem_ctrl.v":133)
 Back to file 'C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_mem_ctrl.v'("C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_mem_ctrl.v":133)
 Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_top.v'
 Analyzing included file 'C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_define.v'("C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_top.v":684)
 Back to file 'C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_top.v'("C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_top.v":684)
-Analyzing included file 'C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_top_define.v'("C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_top.v":684)
+Analyzing included file 'C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\hdl-SEPEMEX\Decoder-sysverilog\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_top_define.v'("C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_top.v":684)
 Back to file 'C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_top.v'("C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_top.v":684)
-Analyzing included file 'C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_parameter.v'("C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_top.v":684)
+Analyzing included file 'C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\hdl-SEPEMEX\Decoder-sysverilog\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_parameter.v'("C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_top.v":684)
 Back to file 'C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_top.v'("C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_top.v":684)
 Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_CON\gw_con_top.v'
-Analyzing included file 'C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\impl\gwsynthesis\RTL_GAO\ao_control\gw_con_top_define.v'("C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_CON\gw_con_top.v":367)
+Analyzing included file 'C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\hdl-SEPEMEX\Decoder-sysverilog\impl\gwsynthesis\RTL_GAO\ao_control\gw_con_top_define.v'("C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_CON\gw_con_top.v":367)
 Back to file 'C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_CON\gw_con_top.v'("C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_CON\gw_con_top.v":367)
 Analyzing included file 'C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_CON\gw_con_parameter.v'("C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_CON\gw_con_top.v":367)
 Back to file 'C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_CON\gw_con_top.v'("C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_CON\gw_con_top.v":367)
 Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\gw_jtag.v'
-Analyzing Verilog file 'C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\impl\gwsynthesis\RTL_GAO\gw_gao_top.v'
-Compiling module 'top'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":5)
-Compiling module 'gene_1hz'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":51)
-WARN  (EX3791) : Expression size 26 truncated to fit in target size 25("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":64)
-Compiling module 'pulso_boton'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":157)
-WARN  (EX3791) : Expression size 26 truncated to fit in target size 25("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":171)
-Compiling module 'boton_sumador'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":178)
-WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":190)
-Compiling module 'mux_accion_semaforo'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":199)
-Compiling module 'decoder'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":74)
-Compiling module 'uart_selector'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":150)
-Compiling module 'mux_triState'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":133)
-WARN  (EX3771) : Module instantiation should have an instance name("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":135)
-Compiling module 'triState'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":124)
-WARN  (EX3771) : Module instantiation should have an instance name("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":136)
-Compiling module 'demux'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":143)
-Compiling module 'gw_gao'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\impl\gwsynthesis\RTL_GAO\gw_gao_top.v":1)
+Analyzing Verilog file 'C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\hdl-SEPEMEX\Decoder-sysverilog\impl\gwsynthesis\RTL_GAO\gw_gao_top.v'
+Compiling module 'top'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\hdl-SEPEMEX\Decoder-sysverilog\src\Decoder.sv":5)
+Compiling module 'gene_1hz'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\hdl-SEPEMEX\Decoder-sysverilog\src\Decoder.sv":58)
+WARN  (EX3791) : Expression size 26 truncated to fit in target size 25("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\hdl-SEPEMEX\Decoder-sysverilog\src\Decoder.sv":71)
+Compiling module 'pulso_boton'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\hdl-SEPEMEX\Decoder-sysverilog\src\Decoder.sv":164)
+WARN  (EX3791) : Expression size 26 truncated to fit in target size 25("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\hdl-SEPEMEX\Decoder-sysverilog\src\Decoder.sv":178)
+Compiling module 'boton_sumador'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\hdl-SEPEMEX\Decoder-sysverilog\src\Decoder.sv":185)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\hdl-SEPEMEX\Decoder-sysverilog\src\Decoder.sv":197)
+Compiling module 'mux_accion_semaforo'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\hdl-SEPEMEX\Decoder-sysverilog\src\Decoder.sv":206)
+Compiling module 'decoder'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\hdl-SEPEMEX\Decoder-sysverilog\src\Decoder.sv":81)
+Compiling module 'uart_selector'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\hdl-SEPEMEX\Decoder-sysverilog\src\Decoder.sv":157)
+Compiling module 'mux_triState'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\hdl-SEPEMEX\Decoder-sysverilog\src\Decoder.sv":140)
+WARN  (EX3771) : Module instantiation should have an instance name("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\hdl-SEPEMEX\Decoder-sysverilog\src\Decoder.sv":142)
+Compiling module 'triState'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\hdl-SEPEMEX\Decoder-sysverilog\src\Decoder.sv":131)
+WARN  (EX3771) : Module instantiation should have an instance name("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\hdl-SEPEMEX\Decoder-sysverilog\src\Decoder.sv":143)
+Compiling module 'demux'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\hdl-SEPEMEX\Decoder-sysverilog\src\Decoder.sv":150)
+Compiling module 'gw_gao'("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\hdl-SEPEMEX\Decoder-sysverilog\impl\gwsynthesis\RTL_GAO\gw_gao_top.v":1)
 Compiling module 'GW_JTAG'("C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\gw_jtag.v":1)
 Compiling module '**'("C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_CON\gw_con_top.v":0)
 Compiling module '**'("C:\Gowin\Gowin_V1.9.9_x64\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_top.v":0)
@@ -60,7 +60,7 @@ Running technical mapping ...
 [75%] Tech-Mapping Phase 2 completed
 [80%] Tech-Mapping Phase 3 completed
 [90%] Tech-Mapping Phase 4 completed
-WARN  (NL0002) : The module "triState" instantiated to "i5" is swept in optimizing("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\src\Decoder.sv":136)
-[95%] Generate netlist file "C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\impl\gwsynthesis\Decoder.vg" completed
-[100%] Generate report file "C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\DecoderSepemex\Decoder\impl\gwsynthesis\Decoder_syn.rpt.html" completed
+WARN  (NL0002) : The module "triState" instantiated to "i5" is swept in optimizing("C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\hdl-SEPEMEX\Decoder-sysverilog\src\Decoder.sv":143)
+[95%] Generate netlist file "C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\hdl-SEPEMEX\Decoder-sysverilog\impl\gwsynthesis\Decoder.vg" completed
+[100%] Generate report file "C:\Users\PABLO-LAP-LENOVO\Documents\gti programing projects\hdl\hdl-SEPEMEX\Decoder-sysverilog\impl\gwsynthesis\Decoder_syn.rpt.html" completed
 GowinSynthesis finish

@@ -23,6 +23,12 @@ module gw_gao(
     \combinacion_final[2] ,
     \combinacion_final[1] ,
     \combinacion_final[0] ,
+    \combinacion_boton[3] ,
+    \combinacion_boton[2] ,
+    \combinacion_boton[1] ,
+    \combinacion_boton[0] ,
+    boton,
+    dest_esp32,
     clk,
     tms_pad_i,
     tck_pad_i,
@@ -54,6 +60,12 @@ input \combinacion_final[3] ;
 input \combinacion_final[2] ;
 input \combinacion_final[1] ;
 input \combinacion_final[0] ;
+input \combinacion_boton[3] ;
+input \combinacion_boton[2] ;
+input \combinacion_boton[1] ;
+input \combinacion_boton[0] ;
+input boton;
+input dest_esp32;
 input clk;
 input tms_pad_i;
 input tck_pad_i;
@@ -84,6 +96,12 @@ wire \combinacion_final[3] ;
 wire \combinacion_final[2] ;
 wire \combinacion_final[1] ;
 wire \combinacion_final[0] ;
+wire \combinacion_boton[3] ;
+wire \combinacion_boton[2] ;
+wire \combinacion_boton[1] ;
+wire \combinacion_boton[0] ;
+wire boton;
+wire dest_esp32;
 wire clk;
 wire tms_pad_i;
 wire tck_pad_i;
@@ -158,7 +176,7 @@ gw_con_top  u_icon_top(
 
 ao_top u_ao_top(
     .control(control0[9:0]),
-    .data_i({select,tx2,tx4,tx3,rx2,led,rx4,rx3,\semaforos[11] ,\semaforos[10] ,\semaforos[9] ,\semaforos[8] ,\semaforos[7] ,\semaforos[6] ,\semaforos[5] ,\semaforos[4] ,\semaforos[3] ,\semaforos[2] ,\semaforos[1] ,\semaforos[0] ,\combinacion_final[3] ,\combinacion_final[2] ,\combinacion_final[1] ,\combinacion_final[0] }),
+    .data_i({select,tx2,tx4,tx3,rx2,led,rx4,rx3,\semaforos[11] ,\semaforos[10] ,\semaforos[9] ,\semaforos[8] ,\semaforos[7] ,\semaforos[6] ,\semaforos[5] ,\semaforos[4] ,\semaforos[3] ,\semaforos[2] ,\semaforos[1] ,\semaforos[0] ,\combinacion_final[3] ,\combinacion_final[2] ,\combinacion_final[1] ,\combinacion_final[0] ,\combinacion_boton[3] ,\combinacion_boton[2] ,\combinacion_boton[1] ,\combinacion_boton[0] ,boton,dest_esp32}),
     .clk_i(clk)
 );
 
